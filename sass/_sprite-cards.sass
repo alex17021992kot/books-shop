@@ -1,0 +1,143 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$american-express-1-name: 'american-express-1'
+$american-express-1-x: 0px
+$american-express-1-y: 105px
+$american-express-1-offset-x: 0px
+$american-express-1-offset-y: -105px
+$american-express-1-width: 40px
+$american-express-1-height: 26px
+$american-express-1-total-width: 43px
+$american-express-1-total-height: 239px
+$american-express-1-image: '../img/sprite-cards.png'
+$american-express-1: (0px, 105px, 0px, -105px, 40px, 26px, 43px, 239px, '../img/sprite-cards.png', 'american-express-1', )
+$american-express-name: 'american-express'
+$american-express-x: 0px
+$american-express-y: 0px
+$american-express-offset-x: 0px
+$american-express-offset-y: 0px
+$american-express-width: 41px
+$american-express-height: 25px
+$american-express-total-width: 43px
+$american-express-total-height: 239px
+$american-express-image: '../img/sprite-cards.png'
+$american-express: (0px, 0px, 0px, 0px, 41px, 25px, 43px, 239px, '../img/sprite-cards.png', 'american-express', )
+$master-card-1-name: 'master-card-1'
+$master-card-1-x: 0px
+$master-card-1-y: 141px
+$master-card-1-offset-x: 0px
+$master-card-1-offset-y: -141px
+$master-card-1-width: 40px
+$master-card-1-height: 26px
+$master-card-1-total-width: 43px
+$master-card-1-total-height: 239px
+$master-card-1-image: '../img/sprite-cards.png'
+$master-card-1: (0px, 141px, 0px, -141px, 40px, 26px, 43px, 239px, '../img/sprite-cards.png', 'master-card-1', )
+$master-card-name: 'master-card'
+$master-card-x: 0px
+$master-card-y: 35px
+$master-card-offset-x: 0px
+$master-card-offset-y: -35px
+$master-card-width: 43px
+$master-card-height: 25px
+$master-card-total-width: 43px
+$master-card-total-height: 239px
+$master-card-image: '../img/sprite-cards.png'
+$master-card: (0px, 35px, 0px, -35px, 43px, 25px, 43px, 239px, '../img/sprite-cards.png', 'master-card', )
+$paypal-1-name: 'paypal-1'
+$paypal-1-x: 0px
+$paypal-1-y: 177px
+$paypal-1-offset-x: 0px
+$paypal-1-offset-y: -177px
+$paypal-1-width: 41px
+$paypal-1-height: 26px
+$paypal-1-total-width: 43px
+$paypal-1-total-height: 239px
+$paypal-1-image: '../img/sprite-cards.png'
+$paypal-1: (0px, 177px, 0px, -177px, 41px, 26px, 43px, 239px, '../img/sprite-cards.png', 'paypal-1', )
+$visa-1-name: 'visa-1'
+$visa-1-x: 0px
+$visa-1-y: 213px
+$visa-1-offset-x: 0px
+$visa-1-offset-y: -213px
+$visa-1-width: 41px
+$visa-1-height: 26px
+$visa-1-total-width: 43px
+$visa-1-total-height: 239px
+$visa-1-image: '../img/sprite-cards.png'
+$visa-1: (0px, 213px, 0px, -213px, 41px, 26px, 43px, 239px, '../img/sprite-cards.png', 'visa-1', )
+$visa-name: 'visa'
+$visa-x: 0px
+$visa-y: 70px
+$visa-offset-x: 0px
+$visa-offset-y: -70px
+$visa-width: 43px
+$visa-height: 25px
+$visa-total-width: 43px
+$visa-total-height: 239px
+$visa-image: '../img/sprite-cards.png'
+$visa: (0px, 70px, 0px, -70px, 43px, 25px, 43px, 239px, '../img/sprite-cards.png', 'visa', )
+$spritesheet-width: 43px
+$spritesheet-height: 239px
+$spritesheet-image: '../img/sprite-cards.png'
+$spritesheet-sprites: ($american-express-1, $american-express, $master-card-1, $master-card, $paypal-1, $visa-1, $visa, )
+$spritesheet: (43px, 239px, '../img/sprite-cards.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

@@ -1,0 +1,153 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.header-top
+		.search
+			width: 380px
+			input
+				width: auto
+				flex-basis: 150px
+	.main-nav
+		a
+			padding: 10px 14px
+@media only screen and (max-width : 870px)
+	.header-top
+		.search
+			width: 250px
+			justify-content: space-between
+			order: 1
+			input
+				width: auto
+				flex-basis: 150px
+			span
+				display: none
+	.main-nav
+		a
+			padding: 8px 9px
+	.banner
+		.banner-img
+			width: 170px
+	//footer
+	.footer-item
+		width: 50%
+		margin-bottom: 20px
+		text-align: center
+@media only screen and (max-width : 795px)
+	.banner
+		display: none
+	.slider
+		.bx-wrapper
+			width: 100%
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.header-top
+		.search
+			margin: 20px auto 10px
+	.toggle-mnu
+		display: block
+	.main-nav
+		display: none
+		flex-direction: column
+		justify-content: flex-start
+		li
+			display: block
+			width: 100%
+			&.active,
+			&:hover
+				background-color: #79b260
+@media only screen and (max-width : 610px)
+	.main-slider
+		img
+			display: none
+		.slider-text
+			margin: 0 auto
+	.slider
+		.bx-wrapper
+			.bx-viewport
+			.bx-controls-direction 
+				a
+					top: 50%
+	//sidebar
+	.main-part
+		padding-top: 30px
+	.aside-menu-btn
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		padding-left: 10px
+		cursor: pointer
+	.main-sidebar
+		position: absolute
+		left: -210px
+		.categories,h4,a
+			color: #fff
+		a
+			cursor: pointer
+	.main-content,
+	.main-sidebar
+		margin-top: 19px
+	.tabs
+		span
+			padding: 12px 13px
+@media only screen and (max-width : 520px)
+	.header-top
+		.wish-list
+			display: none
+	//footer
+	.footer-item
+		width: 100%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.top-line-nav
+		ul
+			justify-content: space-around
+			li
+				padding: 0
+				font-size: 0.95rem
+	.header-top
+		flex-direction: column
+		.basket
+			margin: 20px auto
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

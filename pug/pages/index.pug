@@ -1,0 +1,313 @@
+extends ../layout/main
+
+block title
+	| books-shop
+block content
+	.container
+		section.slider
+			ul.main-slider
+				li(style="background: url(img/main-slider/slide-bg.jpg) ; background-size: cover")
+					img(src="img/main-slider/movie-1.png", alt="movie-1")
+					.slider-text
+						h2.movie-name a wanted man
+						h3 (jack reacher #17)
+						span.author by Lee Child
+				li(style="background: url(img/main-slider/slide-bg.jpg) ; background-size: cover")
+					img(src="img/main-slider/movie-1.png", alt="movie-1")
+					.slider-text
+						h2.movie-name a wanted man
+						h3 (jack reacher #17)
+						span.author by Lee Child
+				li(style="background: url(img/main-slider/slide-bg.jpg) ; background-size: cover")
+					img(src="img/main-slider/movie-1.png", alt="movie-1")
+					.slider-text
+						h2.movie-name a wanted man
+						h3 (jack reacher #17)
+						span.author by Lee Child
+			.banner
+				h2 Deal of the Month
+				h3 The Human Face of Big Data
+				span.banner-img
+				span.banner-action Save 45% Today
+				br
+				span.banner-price 27.50$
+				button.banner-purchase Buy now
+		main.main-part
+			div.aside-menu-btn
+				span.categories-btn categories
+			aside.main-sidebar
+				h3.categories Categories
+				span.categories-all.active all
+				.category-item
+					h4.literature fiction &amp; literature
+					ul.category-list
+						li
+							a(href="#") children
+						li
+							a(href="#") science fiction
+						li
+							a(href="#") fantasy
+						li
+							a(href="#") mystery
+						li
+							a(href="#") romance
+						li
+							a(href="#") horror
+						li
+							a(href="#") poetry
+						li
+							a(href="#") literature
+						li
+							a(href="#") crime
+				.category-item
+					h4.literature non-fiction
+					ul.category-list
+						li
+							a(href="#") comic
+						li
+							a(href="#") cook
+						li
+							a(href="#") psychology
+						li
+							a(href="#") medical
+						li
+							a(href="#") art
+						li
+							a(href="#") photography
+						li 
+							a(href="#") low
+						li
+							a(href="#") history
+						li
+							a(href="#") business
+						li
+							a(href="#") computer
+				.category-item
+					h4.literature other
+					ul.category-list
+						li
+							a(href="#") baby
+						li
+							a(href="#") sex
+						li
+							a(href="#") travel
+						li
+							a(href="#") science
+						li
+							a(href="#") sports
+			.main-content
+				.tabs
+					span.main-content-tab.active best sellers
+					span.main-content-tab new arrivals
+					span.main-content-tab used books
+					span.main-content-tab special offers
+				.tab-content
+					.tab-item
+						a(href="#").book-item
+							span.book-img.book-1
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $50
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-2
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $60
+						a(href="#").book-item
+							span.book-img.book-3
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $25
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-4
+							h4.book-name The Immortals of Meluha
+							span.book-price $80
+						a(href="#").book-item
+							span.book-img.book-5
+							h4.book-name Life Is What You Make It
+							span.book-price $200
+						a(href="#").book-item
+							span.book-img.book-6
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $200
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-7
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $150
+						a(href="#").book-item
+							span.book-img.book-8
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $100
+						a(href="#").book-item
+							span.book-img.book-9
+							h4.book-name The Immortals of Meluha
+							span.book-price $152
+						a(href="#").book-item
+							span.book-img.book-10
+							h4.book-name Life Is What You Make It
+							span.book-price $200
+						a(href="#").book-item
+							span.book-img.book-11
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $220
+						a(href="#").book-item
+							span.book-img.book-12
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $10
+						a(href="#").book-item
+							span.book-img.book-13
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $22
+						a(href="#").book-item
+							span.book-img.book-14
+							h4.book-name The Immortals of Meluha
+							span.book-price $300
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-15
+							h4.book-name Life Is What You Make It
+							span.book-price $205
+						.main-pagination
+							a(href="#") 1
+							a(href="#") 2
+							a(href="#").active 3
+							a(href="#") 4
+							a(href="#") 5
+							a(href="#") 6
+					.tab-item
+						a(href="#").book-item
+							span.book-img.book-1
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $50
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-2
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $60
+						a(href="#").book-item
+							span.book-img.book-3
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $25
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-4
+							h4.book-name The Immortals of Meluha
+							span.book-price $80
+						a(href="#").book-item
+							span.book-img.book-5
+							h4.book-name Life Is What You Make It
+							span.book-price $200
+						a(href="#").book-item
+							span.book-img.book-6
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $200
+							span.book-action 30%
+						.main-pagination
+							a(href="#") 1
+							a(href="#") 2
+							a(href="#").active 3
+							a(href="#") 4
+							a(href="#") 5
+							a(href="#") 6
+					.tab-item
+						a(href="#").book-item
+							span.book-img.book-13
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $22
+						a(href="#").book-item
+							span.book-img.book-14
+							h4.book-name The Immortals of Meluha
+							span.book-price $300
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-15
+							h4.book-name Life Is What You Make It
+							span.book-price $205
+						a(href="#").book-item
+							span.book-img.book-4
+							h4.book-name The Immortals of Meluha
+							span.book-price $80
+						a(href="#").book-item
+							span.book-img.book-5
+							h4.book-name Life Is What You Make It
+							span.book-price $200
+						a(href="#").book-item
+							span.book-img.book-6
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $200
+							span.book-action 30%
+						.main-pagination
+							a(href="#") 1
+							a(href="#") 2
+							a(href="#").active 3
+							a(href="#") 4
+							a(href="#") 5
+							a(href="#") 6
+					.tab-item
+						a(href="#").book-item
+							span.book-img.book-1
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $50
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-2
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $60
+						a(href="#").book-item
+							span.book-img.book-3
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $25
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-4
+							h4.book-name The Immortals of Meluha
+							span.book-price $80
+						a(href="#").book-item
+							span.book-img.book-5
+							h4.book-name Life Is What You Make It
+							span.book-price $200
+						a(href="#").book-item
+							span.book-img.book-6
+							h4.book-name 
+								| The war of </br>
+								|Art
+							span.book-price $200
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-13
+							h4.book-name The Hare With Amber Eyes
+							span.book-price $22
+						a(href="#").book-item
+							span.book-img.book-14
+							h4.book-name The Immortals of Meluha
+							span.book-price $300
+							span.book-action 30%
+						a(href="#").book-item
+							span.book-img.book-15
+							h4.book-name Life Is What You Make It
+							span.book-price $205
+						.main-pagination
+							a(href="#") 1
+							a(href="#") 2
+							a(href="#").active 3
+							a(href="#") 4
+							a(href="#") 5
+							a(href="#") 6
+					
+
